@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 
 		if (isUserValid) {
 			request.getSession().setAttribute("name", name);
-			response.sendRedirect("/list-todos.do");
+			response.sendRedirect("https://github.com/sivajavatechie/JenkinsWar/blob/master/src/main/webapp/index.jsp");
 		} else {
 			request.setAttribute("errorMessage", "Invalid Credentials!");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(
